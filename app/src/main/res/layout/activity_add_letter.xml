@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="#eeeeee"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Letter to Future self"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/speak"
+                    android:layout_marginBottom="10dp"
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_height="56dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/event"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="top|left"
+                    android:imeOptions="actionDone"
+                    android:padding="5dp"
+                    android:textColor="#131212"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#E91E63"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="Set time"
+
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textIsSelectable="true" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#E91E63"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="set date"
+
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textIsSelectable="true" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#008371"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
