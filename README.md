@@ -7,5 +7,7 @@ This app can be used as a reminder to schedule tasks or to write Letters to futu
 
 # TechStack
 The app client has been developed using java on android studio
+
 Room- persistent library has been used as the database 
+
 The backend for the application has been written using Flask(still in progress)
