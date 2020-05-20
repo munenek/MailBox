@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.ViewModel;
 
 import android.app.Application;
 
@@ -6,6 +6,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.paging.PagedList;
 
+import com.cmk.mailbox.Model.Letter;
 
 
 public class LetterViewModel extends AndroidViewModel {

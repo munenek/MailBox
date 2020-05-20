@@ -2,4 +2,44 @@
     <string name="app_name">MailBox</string>
     <string name="action_settings">Settings</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="day_mode">Day Mode</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+<!--    <string name="app_name">Settingspref</string>-->
+<!--    <string name="action_settings">Settings</string>-->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Preference Titles -->
+    <string name="ui">UI</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_def_value">MODE_NIGHT_NO</string>
+
+<!--    <string name="app_name">Notify Me!</string>-->
+    <string name="notification_title">You\'ve been notified!</string>
+    <string name="notification_text">This is your notification text.</string>
+    <string name="update">Update Notification</string>
+    <string name="notify_me">Notify Me!</string>
+    <string name="update_me">Update Me!</string>
+    <string name="cancel_me">Cancel Me!</string>
+    <string name="notification_updated">Notification Updated!</string>
+    <string name="notification_channel_name">Mascot Notification</string>
+    <string name="notification_channel_description">Notification from Mascot</string>
+
+
 </resources>

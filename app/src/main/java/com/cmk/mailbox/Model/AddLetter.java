@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TimePicker;
+
+import com.cmk.mailbox.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -37,6 +39,8 @@ public class AddLetter extends AppCompatActivity {
     private RelativeLayout rlSpeak;
     private String timeToNotify;
     public static final String EXTRA_REPLY = "com.example.android.roomwordssample.REPLY";
+    public static final String EXTRA_TIME = "com.example.android.roomwordssample.TIME";
+    public static final String EXTRA_DATE = "com.example.android.roomwordssample.DATE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,11 +111,16 @@ public class AddLetter extends AppCompatActivity {
                     setResult(RESULT_CANCELED, replyIntent);
                 } else {
                     String word = edtEvent.getText().toString();
+                    String time = edtTime.getText().toString();
+                    String date = edtDate.getText().toString();
                     replyIntent.putExtra(EXTRA_REPLY, word);
+                    replyIntent.putExtra(EXTRA_TIME ,time);
+                    replyIntent.putExtra(EXTRA_DATE,date);
                     setResult(RESULT_OK, replyIntent);
                 }
                 finish();
             }
+
         });
 
     }

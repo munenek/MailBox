@@ -1,15 +1,18 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.cmk.mailbox.ViewModel.LetterViewModel;
+import com.cmk.mailbox.Model.AddLetter;
+import com.cmk.mailbox.Model.Letter;
+import com.cmk.mailbox.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.paging.PagedList;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,8 +22,6 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private LetterViewModel mLetterViewModel;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onChanged(@Nullable final PagedList<Letter> letters) {
                 // Update the cached copy of the words in the adapter.
                 adapter.submitList(letters);
+                
             }
         });
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AddLetter.class);
+                Intent intent = new Intent(MainActivity.this, AddLetter.class);
                 //startActivity(intent);
                 startActivityForResult(intent, NEW_Letter_ACTIVITY_REQUEST_CODE);
             }

@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.ViewModel;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -9,11 +9,13 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import com.cmk.mailbox.Model.Letter;
+import com.cmk.mailbox.Model.LetterDao;
 
 @Database(entities = {Letter.class}, version = 1)
 public abstract class LetterRoomDatabase extends RoomDatabase {
+
+    private String  time, date, timestamp;
     public abstract LetterDao letterDao();
     private static volatile LetterRoomDatabase INSTANCE;
     //private static final int NUMBER_OF_THREADS = 4;
@@ -75,4 +77,28 @@ public abstract class LetterRoomDatabase extends RoomDatabase {
             return null;
         }
     }
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
 }
+

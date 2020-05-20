@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.ViewModel;
 
 
 import android.app.Application;
@@ -8,7 +8,8 @@ import androidx.lifecycle.LiveData;
 import androidx.paging.LivePagedListBuilder;
 import androidx.paging.PagedList;
 
-import java.util.List;
+import com.cmk.mailbox.Model.Letter;
+import com.cmk.mailbox.Model.LetterDao;
 
 public class LetterRepository {
     private LetterDao mLetterDao;

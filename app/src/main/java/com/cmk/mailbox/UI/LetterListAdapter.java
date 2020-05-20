@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.UI;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.cmk.mailbox.Model.Letter;
+import com.cmk.mailbox.R;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.cmk.mailbox;
+package com.cmk.mailbox.Model;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
